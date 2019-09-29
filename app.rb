@@ -1,3 +1,4 @@
+require 'sinatra'
 require 'sinatra/base'
 require 'sinatra/flash'
 require './lib/hangperson_game.rb'
@@ -18,7 +19,7 @@ class HangpersonApp < Sinatra::Base
   # These two routes are good examples of Sinatra syntax
   # to help you with the rest of the assignment
   get '/' do
-    redirect '/new'
+    "<!DOCTYPE html><html><head></head><body><h1>Hello World</h1></body></html>" #redirect '/new'
   end
   
   get '/new' do
