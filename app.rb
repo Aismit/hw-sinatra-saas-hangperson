@@ -44,10 +44,10 @@ class HangpersonApp < Sinatra::Base
     begin
         curr_val = @game.guess(letter)
     rescue
-        flash[:message] = "Invalid Letter"
+        flash[:message] = "Invalid guess."
     else
         if !curr_val
-            flash[:message] = "You have already used that letter"
+            flash[:message] = "You have already used that letter."
         end
         curr = @game.check_win_or_lose
         if curr == :lose

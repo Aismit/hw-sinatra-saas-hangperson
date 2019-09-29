@@ -1,1 +1,1 @@
-https://shrouded-everglades-44434.herokuapp.com/
+shrouded-everglades-44434.herokuapp.com
